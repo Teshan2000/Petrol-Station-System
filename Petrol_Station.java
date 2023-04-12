@@ -7,6 +7,10 @@ public class Petrol_Station {
         Scanner reader = new Scanner(System.in);
 
         System.out.println("Choose your urgency");
+        System.out.println("\t 1. Urgent"); 
+        System.out.println("\t 2. Normal"); 
+        System.out.println("\t 3. Not Urgent"); 
+
         System.out.println("Enter the number of your choice: ");  
         int urgency = reader.nextInt();
 
@@ -22,9 +26,16 @@ public class Petrol_Station {
             case 3:
             NotUrgent(); 
             break;
+
+            default:
+            System.out.println("Enter again");
         }
 
         System.out.println("Choose your distance");
+        System.out.println("\t 1. Far Away"); 
+        System.out.println("\t 2. Not So Far"); 
+        System.out.println("\t 3. Near"); 
+
         System.out.println("Enter the number of your choice: ");  
         int distance = reader.nextInt();
 
@@ -40,9 +51,32 @@ public class Petrol_Station {
             case 3:
                 Near();
             break;
+
+            default:
+            System.out.println("Enter again");
         }
 
-        System.out.println("");
+
+        if(urgency == 1){
+            System.out.println("Token is one");
+        }
+        else if(urgency == 2){
+            System.out.println("Token is two");
+        }
+        else if(urgency == 3){
+            System.out.println("Token is three");
+        }
+
+        if(distance == 1){
+            System.out.println("Token is one");
+        }
+        else if(distance == 2){
+            System.out.println("Token is two");
+        }
+        else if(distance == 3){
+            System.out.println("Token is three");
+        }
+
     }
         
     static void Urgent() {       
