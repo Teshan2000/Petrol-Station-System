@@ -40,9 +40,32 @@ public class Petrol_Station {
             case 3:
                 Near();
             break;
-}
+        }
 
         System.out.println("");
     }
+        
+    static void Urgent() {       
+        System.out.println("\t\t--You have an urgent journey--");    
+    }
+    static void Normal() {
+        System.out.println("\t\t--You have a normal journey--");
+    }
+    static void NotUrgent() {
+        System.out.println("\t\t--You do not have an urgent journey--");
+    }
+    
+
+    static void Faraway() {        
+        System.out.println("\t\t--You are going to a far away distance--");        
+    }
+    static void NotSoFar() {
+        System.out.println("\t\t--You are going to a normal distance--");
+    }
+    static void Near() {
+        System.out.println("\t\t--You are going to a near distance--");
+    }
+
     
 }
+
