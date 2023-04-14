@@ -57,24 +57,34 @@ public class Petrol_Station {
         }
 
 
-        if(urgency == 1){
-            System.out.println("Token is one");
+        if(urgency == 1 && distance == 1){
+            System.out.println("Token is 1");
         }
-        else if(urgency == 2){
-            System.out.println("Token is two");
+        else if(urgency == 1 && distance == 2){
+            System.out.println("Token is 2");
         }
-        else if(urgency == 3){
-            System.out.println("Token is three");
+        else if(urgency == 1 && distance == 3){
+            System.out.println("Token is 3");
         }
 
-        if(distance == 1){
-            System.out.println("Token is one");
+        else if(urgency == 2 && distance == 1){
+            System.out.println("Token is 4");
         }
-        else if(distance == 2){
-            System.out.println("Token is two");
+        else if(urgency == 2 && distance == 2){
+            System.out.println("Token is 5");
         }
-        else if(distance == 3){
-            System.out.println("Token is three");
+        else if(urgency == 2 && distance == 3){
+            System.out.println("Token is 6");
+        }
+
+        else if(urgency == 3 && distance == 1){
+            System.out.println("Token is 7");
+        }
+        else if(urgency == 3 && distance == 2){
+            System.out.println("Token is 8");
+        }
+        else if(urgency == 3 && distance == 3){
+            System.out.println("Token is 9");
         }
 
     }
