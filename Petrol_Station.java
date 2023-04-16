@@ -1,7 +1,10 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Petrol_Station {
     public static void main(String[] args) {
+        
+        ArrayList<Integer> arrlist = new ArrayList<Integer>();  
         
         System.out.println("Welcome to our Petrol Station System!");
         Scanner reader = new Scanner(System.in);
@@ -61,35 +64,45 @@ public class Petrol_Station {
 
             if(urgency == 1 && distance == 1){
                 System.out.println("Your Token is 1");
+                arrlist.add(1); 
             }
             else if(urgency == 1 && distance == 2){
                 System.out.println("Your Token is 2");
+                arrlist.add(2); 
             }
             else if(urgency == 1 && distance == 3){
                 System.out.println("Your Token is 3");
+                arrlist.add(3); 
             }
             else if(urgency == 2 && distance == 1){
                 System.out.println("Your Token is 4");
+                arrlist.add(4); 
             }
             else if(urgency == 2 && distance == 2){
                 System.out.println("Your Token is 5");
+                arrlist.add(5); 
             }
             else if(urgency == 2 && distance == 3){
                 System.out.println("Your Token is 6");
+                arrlist.add(6); 
             }
             else if(urgency == 3 && distance == 1){
                 System.out.println("Your Token is 7");
+                arrlist.add(7); 
             }
             else if(urgency == 3 && distance == 2){
                 System.out.println("Your Token is 8");
+                arrlist.add(8); 
             }
             else if(urgency == 3 && distance == 3){
                 System.out.println("Your Token is 9");
+                arrlist.add(9); 
             }
         }
 
         System.out.println("------------------------------------"); 
-        System.out.println("------ This is your Token List------"); 
+        System.out.println("------ This is your Token List------\n"); 
+        System.out.println(arrlist);
 
     }
         
