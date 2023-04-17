@@ -104,6 +104,45 @@ public class Petrol_Station {
         System.out.println("------ This is your Token List------\n"); 
         System.out.println(arrlist);
 
+
+
+        System.out.println("\t\t 1. Selection Sort"); 
+        System.out.println("\t\t 2. Insertion Sort"); 
+        System.out.println("\t\t 3. Bubble Sort"); 
+
+        System.out.println("Enter the number of your choice: ");
+        int sort = reader.nextInt();
+
+        switch (sort) {
+
+            case 1:
+                selectionSort(clients, 0, c - 1);  
+            
+                System.out.print("\t\tSelection Sort: ");
+                for (int i = 0; i < c; i++)                   
+                System.out.print(clients[i] + " ");         
+                System.out.println(" "); 
+            break;
+
+            case 2:
+                insertionSort(clients);            
+                
+                System.out.print("\t\t Insertion Sort: ");
+                for (int k = 0; k < c; k++)          
+                System.out.print(clients[k] + " "); 
+                System.out.println(" ");  
+            break;
+
+            case 3:
+                bubbleSort(clients);            
+                
+                System.out.print("\t\tBubble Sort ");            
+                for (int h = 0; h < c; h++)          
+                System.out.print(clients[h] + " "); 
+                System.out.println(" "); 
+            break;
+        }
+
     }
         
     static void Urgent() {       
