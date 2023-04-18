@@ -166,6 +166,27 @@ public class Petrol_Station {
         System.out.println("\t\t--You are going to a near distance--");
     }
 
-    
+
+    //Selection Sort
+    static void selectionSort(int[] clients, int low, int high) {
+        
+        for (int h = low; h <= high; h++)
+            swap (clients, h, getSmallest(clients, h, high));
+    }
+    static int getSmallest(int[] clients, int low, int high) {
+
+        int small = low;
+        for (int i = low + 1; i <= high; i++)
+          if (clients[i] < clients[small])   
+            small = i;     
+        return small;
+    }
+    static void swap(int[] clients, int i, int j) {
+
+        int temp = clients[i];
+        clients[i] = clients[j];
+        clients[j] = temp;        
+    }
+
 }
 
