@@ -188,5 +188,17 @@ public class Petrol_Station {
         clients[j] = temp;        
     }
 
+    //Insertion Sort
+    static void insertionSort(int[] elements) {
+        for (int i = 1; i < elements.length; i++) {
+          int key = elements[i];
+          int j = i - 1;
+          while (j >= 0 && key < elements[j]) {
+            elements[j + 1] = elements[j];
+            j--;
+          }// end while loop
+          elements[j + 1] = key;
+        }
+    }
 }
 
