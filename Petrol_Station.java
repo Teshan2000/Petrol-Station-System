@@ -191,13 +191,33 @@ public class Petrol_Station {
     //Insertion Sort
     static void insertionSort(int[] elements) {
         for (int i = 1; i < elements.length; i++) {
+
           int key = elements[i];
           int j = i - 1;
           while (j >= 0 && key < elements[j]) {
             elements[j + 1] = elements[j];
             j--;
-          }// end while loop
+          }
           elements[j + 1] = key;
+        }
+    }
+
+    //Bubble Sort
+    static void bubbleSort(int[] clients) {
+    
+        int n = clients.length;
+        int temp = 0;
+  
+        for (int i = 0; i < n; i++) {
+            for (int j = 1; j < (n - i); j++) {
+  
+                if (clients[j - 1] > clients[j]) {
+                  
+                    temp = clients[j - 1];
+                    clients[j - 1] = clients[j];
+                    clients[j] = temp;
+                }  
+            }
         }
     }
 }
