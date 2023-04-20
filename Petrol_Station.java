@@ -104,6 +104,11 @@ public class Petrol_Station {
         System.out.println("------ This is your Token List------\n"); 
         System.out.println(arrlist);
 
+        int[] clients = new int[arrlist.size()];
+        for (int i = 0; i < arrlist.size(); i++) {
+                    clients[i] = arrlist.get(i);           
+        }
+        int c = clients.length;  
 
 
         System.out.println("\t\t 1. Selection Sort"); 
