@@ -100,6 +100,8 @@ public class Petrol_Station {
             }
         }
 
+        System.out.println("\n\n       9 Clients answered successfully!");         
+
         System.out.println("------------------------------------"); 
         System.out.println("------ This is your Token List------\n"); 
         System.out.println(arrlist);
@@ -111,6 +113,7 @@ public class Petrol_Station {
         int c = clients.length;  
 
 
+        System.out.println("\nFinally, you can choose the sorting method");    
         System.out.println("\t\t 1. Selection Sort"); 
         System.out.println("\t\t 2. Insertion Sort"); 
         System.out.println("\t\t 3. Bubble Sort"); 
@@ -127,7 +130,7 @@ public class Petrol_Station {
                 for (int i = 0; i < c; i++)                   
                 System.out.print(clients[i] + " ");         
                 System.out.println(" "); 
-            break;
+                break;
 
             case 2:
                 insertionSort(clients);            
@@ -136,7 +139,7 @@ public class Petrol_Station {
                 for (int k = 0; k < c; k++)          
                 System.out.print(clients[k] + " "); 
                 System.out.println(" ");  
-            break;
+                break;
 
             case 3:
                 bubbleSort(clients);            
@@ -145,9 +148,18 @@ public class Petrol_Station {
                 for (int h = 0; h < c; h++)          
                 System.out.print(clients[h] + " "); 
                 System.out.println(" "); 
-            break;
+                break;
+            
+            default:
+                System.out.println("Enter again");
         }
 
+        System.out.println("Check the token number you received and follow the order below");
+        for (int i = 0; i < c; i++) {                 
+            System.out.println(""+(i+1)+" place is, token number = " + clients[i]);
+        }     
+
+        System.out.println("\t\t\t Thank You!");
     }
         
     static void Urgent() {       
