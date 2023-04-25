@@ -11,6 +11,10 @@ public class Petrol_Station {
 
         for(int i = 1; i <= 9; i++) {
 
+            System.out.println("              Welcome User number " + i    );
+            System.out.println("\n\n ");
+            System.out.println("This is your first option");
+
             System.out.println("Choose your urgency");
             System.out.println("\t 1. Urgent"); 
             System.out.println("\t 2. Normal"); 
@@ -36,6 +40,8 @@ public class Petrol_Station {
                 System.out.println("Enter again");
             }
 
+            System.out.println("This is your second option"); 
+            
             System.out.println("Choose your distance");
             System.out.println("\t 1. Far Away"); 
             System.out.println("\t 2. Not So Far"); 
@@ -104,7 +110,9 @@ public class Petrol_Station {
 
         System.out.println("------------------------------------"); 
         System.out.println("------ This is your Token List------\n"); 
+        System.out.println("             This is your Token List            \n"); 
         System.out.println(arrlist);
+        System.out.println("-------------------------------------------------");      
 
         int[] clients = new int[arrlist.size()];
         for (int i = 0; i < arrlist.size(); i++) {
