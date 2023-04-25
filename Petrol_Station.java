@@ -38,6 +38,7 @@ public class Petrol_Station {
 
                 default:
                 System.out.println("Enter again");
+                main(args);
             }
 
             System.out.println("This is your second option"); 
@@ -65,6 +66,7 @@ public class Petrol_Station {
 
                 default:
                 System.out.println("Enter again");
+                main(args);
             }
 
 
@@ -134,7 +136,7 @@ public class Petrol_Station {
             case 1:
                 selectionSort(clients, 0, c - 1);  
             
-                System.out.print("\t\tSelection Sort: ");
+                System.out.print("Your tokens were sorted by Selection Sort: ");  
                 for (int i = 0; i < c; i++)                   
                 System.out.print(clients[i] + " ");         
                 System.out.println(" "); 
@@ -143,7 +145,7 @@ public class Petrol_Station {
             case 2:
                 insertionSort(clients);            
                 
-                System.out.print("\t\t Insertion Sort: ");
+                System.out.print("Your tokens were sorted by Insertion Sort: ");  
                 for (int k = 0; k < c; k++)          
                 System.out.print(clients[k] + " "); 
                 System.out.println(" ");  
@@ -152,7 +154,7 @@ public class Petrol_Station {
             case 3:
                 bubbleSort(clients);            
                 
-                System.out.print("\t\tBubble Sort ");            
+                System.out.print("Your tokens were sorted by Bubble Sort: ");    
                 for (int h = 0; h < c; h++)          
                 System.out.print(clients[h] + " "); 
                 System.out.println(" "); 
@@ -160,14 +162,21 @@ public class Petrol_Station {
             
             default:
                 System.out.println("Enter again");
+                main(args);
         }
 
-        System.out.println("Check the token number you received and follow the order below");
+        System.out.println("-------------------------------------------------------------");
+        System.out.println("\nSo, Users can get fuel in the following order");
+        System.out.println(" "); 
+
         for (int i = 0; i < c; i++) {                 
-            System.out.println(""+(i+1)+" place is, token number = " + clients[i]);
+            System.out.println("User number " + j + " can get fuel at "+ clients[i]);       
         }     
 
-        System.out.println("\t\t\t Thank You!");
+        System.out.println("\n");
+        System.out.println("\t\t\t\t\t\t------------------------------------------------------------------------------");        
+        System.out.println("\t\t\t\t\t\t-                              - Thank You! -                                -");
+        System.out.println("\t\t\t\t\t\t------------------------------------------------------------------------------");
     }
         
     static void Urgent() {       
