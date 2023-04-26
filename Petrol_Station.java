@@ -6,22 +6,35 @@ public class Petrol_Station {
         
         ArrayList<Integer> arrlist = new ArrayList<Integer>();  
         
-        System.out.println("Welcome to our Petrol Station System!");
+        System.out.println("\t\t\t\t\t\t ------------------------------------------------------------------------------"); 
+        System.out.println("\t\t\t\t\t\t|                     Welcome to our Petrol Station System!                    |"); 
+        System.out.println("\t\t\t\t\t\t|                                                                              |");            
+        System.out.println("\t\t\t\t\t\t|  Let's choose your priority to get fuel according to the sorting algorithms  |");
+        System.out.println("\t\t\t\t\t\t|                                                                              |");    
+        System.out.println("\t\t\t\t\t\t|            You have to select 2 options to check your priority               |");
+        System.out.println("\t\t\t\t\t\t ------------------------------------------------------------------------------"); 
         Scanner reader = new Scanner(System.in);
 
         for(int i = 1; i <= 9; i++) {
 
+            System.out.println("-----------------------------------------------");    
             System.out.println("              Welcome User number " + i    );
+            System.out.println("-----------------------------------------------");    
             System.out.println("\n\n ");
             System.out.println("This is your first option");
+            System.out.println(" "); 
 
-            System.out.println("Choose your urgency");
+            System.out.println("-----------------------------------------------");
+            System.out.println("|        (1) Choose your Urgency              |");  
+            System.out.println("-----------------------------------------------");
             System.out.println("\t 1. Urgent"); 
             System.out.println("\t 2. Normal"); 
             System.out.println("\t 3. Not Urgent"); 
+            System.out.println("-----------------------------------------------");
 
             System.out.println("Enter the number of your choice: ");  
             int urgency = reader.nextInt();
+            System.out.println(" "); 
 
             switch (urgency) {
                 case 1:
@@ -41,15 +54,20 @@ public class Petrol_Station {
                 main(args);
             }
 
-            System.out.println("This is your second option"); 
+            System.out.println("This is your second option");
+            System.out.println(" ");  
             
-            System.out.println("Choose your distance");
+            System.out.println("-----------------------------------------------");
+            System.out.println("|        (2) Choose your Distance             |");   
+            System.out.println("-----------------------------------------------");
             System.out.println("\t 1. Far Away"); 
             System.out.println("\t 2. Not So Far"); 
             System.out.println("\t 3. Near"); 
+            System.out.println("-----------------------------------------------");
 
             System.out.println("Enter the number of your choice: ");  
             int distance = reader.nextInt();
+            System.out.println(" "); 
 
             switch (distance) {
                 case 1:
