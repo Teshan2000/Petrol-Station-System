@@ -89,48 +89,66 @@ public class Petrol_Station {
 
 
             if(urgency == 1 && distance == 1){
-                System.out.println("Your Token is 1");
+                System.out.println("-----------------------------------------------");
+                System.out.println("|               Your token is 1               |");    
+                System.out.println("-----------------------------------------------"); 
                 arrlist.add(1); 
             }
             else if(urgency == 1 && distance == 2){
-                System.out.println("Your Token is 2");
+                System.out.println("-----------------------------------------------");
+                System.out.println("|               Your token is 2               |"); 
+                System.out.println("-----------------------------------------------");    
                 arrlist.add(2); 
             }
             else if(urgency == 1 && distance == 3){
-                System.out.println("Your Token is 3");
+                System.out.println("-----------------------------------------------");
+                System.out.println("|               Your token is 3               |");    
+                System.out.println("-----------------------------------------------"); 
                 arrlist.add(3); 
             }
             else if(urgency == 2 && distance == 1){
-                System.out.println("Your Token is 4");
+                System.out.println("-----------------------------------------------");
+                System.out.println("|               Your token is 4               |"); 
+                System.out.println("-----------------------------------------------");    
                 arrlist.add(4); 
             }
             else if(urgency == 2 && distance == 2){
-                System.out.println("Your Token is 5");
+                System.out.println("-----------------------------------------------");
+                System.out.println("|               Your token is 5               |"); 
+                System.out.println("-----------------------------------------------");    
                 arrlist.add(5); 
             }
             else if(urgency == 2 && distance == 3){
-                System.out.println("Your Token is 6");
+                System.out.println("-----------------------------------------------");
+                System.out.println("|               Your token is 6               |");     
+                System.out.println("-----------------------------------------------");
                 arrlist.add(6); 
             }
             else if(urgency == 3 && distance == 1){
-                System.out.println("Your Token is 7");
+                System.out.println("-----------------------------------------------");
+                System.out.println("|               Your token is 7               |");  
+                System.out.println("-----------------------------------------------");   
                 arrlist.add(7); 
             }
             else if(urgency == 3 && distance == 2){
-                System.out.println("Your Token is 8");
+                System.out.println("-----------------------------------------------");
+                System.out.println("|               Your token is 8               |");  
+                System.out.println("-----------------------------------------------");   
                 arrlist.add(8); 
             }
             else if(urgency == 3 && distance == 3){
-                System.out.println("Your Token is 9");
+                System.out.println("-----------------------------------------------");
+                System.out.println("|               Your token is 9               |");   
+                System.out.println("-----------------------------------------------");  
                 arrlist.add(9); 
             }
         }
 
         System.out.println("\n\n       9 Clients answered successfully!");         
 
-        System.out.println("------------------------------------"); 
-        System.out.println("------ This is your Token List------\n"); 
+        System.out.println("\n\n-----------------------------------------------");
         System.out.println("             This is your Token List            \n"); 
+        System.out.println("\t  ");
         System.out.println(arrlist);
         System.out.println("-------------------------------------------------");      
 
@@ -142,12 +160,15 @@ public class Petrol_Station {
 
 
         System.out.println("\nFinally, you can choose the sorting method");    
+        System.out.println("-----------------------------------------------");
         System.out.println("\t\t 1. Selection Sort"); 
         System.out.println("\t\t 2. Insertion Sort"); 
         System.out.println("\t\t 3. Bubble Sort"); 
+        System.out.println("-----------------------------------------------");
 
         System.out.println("Enter the number of your choice: ");
         int sort = reader.nextInt();
+        System.out.println(" ");
 
         switch (sort) {
 
