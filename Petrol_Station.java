@@ -54,6 +54,7 @@ public class Petrol_Station {
                 main(args);
             }
 
+            System.out.println("\n\n");
             System.out.println("This is your second option");
             System.out.println(" ");  
             
@@ -154,21 +155,24 @@ public class Petrol_Station {
 
         int[] clients = new int[arrlist.size()];
         for (int i = 0; i < arrlist.size(); i++) {
-                    clients[i] = arrlist.get(i);           
+            clients[i] = arrlist.get(i);           
         }
         int c = clients.length;  
 
 
         System.out.println("\nFinally, you can choose the sorting method");    
+        System.out.println(" ");
         System.out.println("-----------------------------------------------");
         System.out.println("\t\t 1. Selection Sort"); 
         System.out.println("\t\t 2. Insertion Sort"); 
         System.out.println("\t\t 3. Bubble Sort"); 
         System.out.println("-----------------------------------------------");
 
+        System.out.println(" ");
         System.out.println("Enter the number of your choice: ");
         int sort = reader.nextInt();
         System.out.println(" ");
+        System.out.println("-----------------------------------------------");
 
         switch (sort) {
 
@@ -208,7 +212,9 @@ public class Petrol_Station {
         System.out.println("\nSo, Users can get fuel in the following order");
         System.out.println(" "); 
 
-        for (int i = 0; i < c; i++) {                 
+        System.out.println("-----------------------------------------------");
+        for (int i = 0; i < c; i++) {  
+            System.out.print("\t");               
             System.out.println("User number " + j + " can get fuel at "+ clients[i]);       
         }     
 
