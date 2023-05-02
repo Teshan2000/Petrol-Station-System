@@ -50,7 +50,13 @@ public class Petrol_Station {
                 break;
 
                 default:
-                System.out.println("Enter again");
+                System.out.println("-----------------------------------------------");
+                System.out.println("|            Your answer is wrong!            |");
+                System.out.println("|                                             |");
+                System.out.println("|            You can't get a token!           |");
+                System.out.println("|                                             |");
+                System.out.println("|        Please try again in next round!      |");
+                System.out.println("-----------------------------------------------");
                 main(args);
             }
 
@@ -84,7 +90,13 @@ public class Petrol_Station {
                 break;
 
                 default:
-                System.out.println("Enter again");
+                System.out.println("-----------------------------------------------");
+                System.out.println("|            Your answer is wrong!            |");
+                System.out.println("|                                             |");
+                System.out.println("|            You can't get a token!           |");
+                System.out.println("|                                             |");
+                System.out.println("|        Please try again in next round!      |");
+                System.out.println("-----------------------------------------------");
                 main(args);
             }
 
@@ -204,8 +216,14 @@ public class Petrol_Station {
                 break;
             
             default:
-                System.out.println("Enter again");
-                main(args);
+            System.out.println("-----------------------------------------------");
+            System.out.println("|            Your answer is wrong!            |");
+            System.out.println("|                                             |");
+            System.out.println("|            You can't get a token!           |");
+            System.out.println("|                                             |");
+            System.out.println("|        Please try again in next round!      |");
+            System.out.println("-----------------------------------------------");
+            main(args);
         }
 
         System.out.println("-------------------------------------------------------------");
