@@ -17,11 +17,12 @@ public class Petrol_Station {
 
         for(int i = 1; i <= 9; i++) {
 
-            System.out.println("-----------------------------------------------");    
-            System.out.println("              Welcome User number " + i    );
-            System.out.println("-----------------------------------------------");    
             System.out.println("\n\n ");
-            System.out.println("This is your first option");
+            System.out.println("-----------------------------------------------");    
+            System.out.println("          Welcome User number " + i    );
+            System.out.println("-----------------------------------------------");    
+            
+            System.out.println("\tThis is your First Option");
             System.out.println(" "); 
 
             System.out.println("-----------------------------------------------");
@@ -60,8 +61,8 @@ public class Petrol_Station {
                 main(args);
             }
 
-            System.out.println("\n\n");
-            System.out.println("This is your second option");
+            System.out.println("\n");
+            System.out.println("This is your Second Option");
             System.out.println(" ");  
             
             System.out.println("-----------------------------------------------");
@@ -232,6 +233,8 @@ public class Petrol_Station {
 
         System.out.println("-----------------------------------------------");
         for (int i = 0; i < c; i++) {  
+        int j = i + 1;        
+            clients[i] = arrlist.get(i); 
             System.out.print("\t");               
             System.out.println("User number " + j + " can get fuel at "+ clients[i]);       
         }     
@@ -243,24 +246,24 @@ public class Petrol_Station {
     }
         
     static void Urgent() {       
-        System.out.println("\t\t--You have an urgent journey--");    
+        System.out.println("\t--You have an Urgent Journey--\n");    
     }
     static void Normal() {
-        System.out.println("\t\t--You have a normal journey--");
+        System.out.println("\t--You have a Normal Journey--\n");
     }
     static void NotUrgent() {
-        System.out.println("\t\t--You do not have an urgent journey--");
+        System.out.println("\t--You do not have an Urgent Journey--\n");
     }
     
 
     static void Faraway() {        
-        System.out.println("\t\t--You are going to a far away distance--");        
+        System.out.println("\t--You are going to a Far Away Distance--\n");        
     }
     static void NotSoFar() {
-        System.out.println("\t\t--You are going to a normal distance--");
+        System.out.println("\t--You are going to a Normal Distance--\n");
     }
     static void Near() {
-        System.out.println("\t\t--You are going to a near distance--");
+        System.out.println("\t--You are going to a Near Distance--\n");
     }
 
 
