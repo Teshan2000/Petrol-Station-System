@@ -11,7 +11,7 @@ public class Petrol_Station {
         System.out.println("\t\t\t\t\t\t|                                                                              |");            
         System.out.println("\t\t\t\t\t\t|  Let's choose your priority to get fuel according to the sorting algorithms  |");
         System.out.println("\t\t\t\t\t\t|                                                                              |");    
-        System.out.println("\t\t\t\t\t\t|            You have to select 2 options to check your priority               |");
+        System.out.println("\t\t\t\t\t\t|            You have to select 2 choices to check your priority               |");
         System.out.println("\t\t\t\t\t\t ------------------------------------------------------------------------------"); 
         Scanner reader = new Scanner(System.in);
 
@@ -79,15 +79,15 @@ public class Petrol_Station {
 
             switch (distance) {
                 case 1:
-                    Faraway();                
+                Faraway();                
                 break;
 
                 case 2:
-                    NotSoFar(); 
+                NotSoFar(); 
                 break;
 
                 case 3:
-                    Near();
+                Near();
                 break;
 
                 default:
@@ -185,36 +185,36 @@ public class Petrol_Station {
         System.out.println("Enter the number of your choice: ");
         int sort = reader.nextInt();
         System.out.println(" ");
-        System.out.println("-----------------------------------------------");
+        System.out.println("-------------------------------------------------------------");
 
         switch (sort) {
 
             case 1:
-                selectionSort(clients, 0, c - 1);  
+            selectionSort(clients, 0, c - 1);  
             
-                System.out.print("Your tokens were sorted by Selection Sort: ");  
-                for (int i = 0; i < c; i++)                   
-                System.out.print(clients[i] + " ");         
-                System.out.println(" "); 
-                break;
+            System.out.print("Your tokens were sorted by Selection Sort: ");  
+            for (int i = 0; i < c; i++)                   
+            System.out.print(clients[i] + " ");         
+            System.out.println(" "); 
+            break;
 
             case 2:
-                insertionSort(clients);            
+            insertionSort(clients);            
                 
-                System.out.print("Your tokens were sorted by Insertion Sort: ");  
-                for (int k = 0; k < c; k++)          
-                System.out.print(clients[k] + " "); 
-                System.out.println(" ");  
-                break;
+            System.out.print("Your tokens were sorted by Insertion Sort: ");  
+            for (int k = 0; k < c; k++)          
+            System.out.print(clients[k] + " "); 
+            System.out.println(" ");  
+            break;
 
             case 3:
-                bubbleSort(clients);            
+            bubbleSort(clients);            
                 
-                System.out.print("Your tokens were sorted by Bubble Sort: ");    
-                for (int h = 0; h < c; h++)          
-                System.out.print(clients[h] + " "); 
-                System.out.println(" "); 
-                break;
+            System.out.print("Your tokens were sorted by Bubble Sort: ");    
+            for (int h = 0; h < c; h++)          
+            System.out.print(clients[h] + " "); 
+            System.out.println(" "); 
+            break;
             
             default:
             System.out.println("-----------------------------------------------");
@@ -228,7 +228,7 @@ public class Petrol_Station {
         }
 
         System.out.println("-------------------------------------------------------------");
-        System.out.println("\nSo, Users can get fuel in the following order");
+        System.out.println("\n   So, You can get fuel in the following order");
         System.out.println(" "); 
 
         System.out.println("-----------------------------------------------");
